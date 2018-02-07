@@ -5,6 +5,10 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.project
+*.iml
+.idea/
+.classpath
 ### Eclipse template
 
 .metadata
