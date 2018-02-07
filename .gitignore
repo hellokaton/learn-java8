@@ -8,6 +8,7 @@
 .project
 *.iml
 .idea/
+.vscode/
 .classpath
 ### Eclipse template
 
