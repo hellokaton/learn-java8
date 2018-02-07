@@ -5,9 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.biezhi</groupId>
-    <artifactId>lets-java8</artifactId>
+    <artifactId>learn-java8</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>java8-lambda</module>
+        <module>java8-optional</module>
+        <module>java8-stream</module>
+        <module>java8-default-methods</module>
+        <module>java8-datetime-api</module>
+        <module>java8-nashorn</module>
+        <module>java8-best-practice</module>
+        <module>java8-proper</module>
+        <module>java8-concurrent</module>
+    </modules>
 
     <build>
         <plugins>
@@ -21,16 +33,5 @@
             </plugin>
         </plugins>
     </build>
-    <modules>
-        <module>java8-lambda</module>
-        <module>java8-optional</module>
-        <module>java8-stream</module>
-        <module>java8-default-methods</module>
-        <module>java8-datetime-api</module>
-        <module>java8-nashorn</module>
-        <module>java8-best-practice</module>
-        <module>java8-proper</module>
-        <module>java8-concurrent</module>
-    </modules>
 
 </project>

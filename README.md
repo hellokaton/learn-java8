@@ -42,7 +42,7 @@ java 8 改变了我们思考和编码的方式，在这里你会看到很多关�
 
 ## 交流
 
-如果你有什么好的想法或建议可以给我发送邮件，我的电子邮件是 `biezhi.me#gmail.com`，或者在 Github 上发起一个 [issue](https://github.com/biezhi/lets-java8/issues/new)。
+如果你有什么好的想法或建议可以给我发送邮件，我的电子邮件是 `biezhi.me#gmail.com`，或者在 Github 上发起一个 [issue](https://github.com/biezhi/learn-java8/issues/new)。
 期待未来有更多的分享可以加入这个QQ群：**663887729**，保持 8/2 原则，少斗图多交流。
 
 ## 捐赠作者
