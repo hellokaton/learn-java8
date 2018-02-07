@@ -4,6 +4,12 @@
 
 java 8 改变了我们思考和编码的方式，在这里你会看到很多关于 Java 8 的文章和教程，如何使用它的各种功能，以及如何让你的编程更轻松！
 
+[![Travis Build](https://travis-ci.org/biezhi/lets-learn-java8.svg?branch=master)](https://travis-ci.org/biezhi/lets-learn-java8) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
+[![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://github.com/biezhi/lets-learn-java8/blob/master/LICENSE)
+[![@biezhi on zhihu](https://img.shields.io/badge/zhihu-%40biezhi-red.svg)](https://www.zhihu.com/people/biezhi)
+[![](https://img.shields.io/github/followers/biezhi.svg?style=social&label=Follow%20Me)](https://github.com/biezhi)
+
 课程的讲授方式原则是：**What**、**Why**、**How**
 
 我们会说清楚每个技能是什么，为什么是这样，以及编码演示他们的使用方法以及场景，
