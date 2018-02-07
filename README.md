@@ -4,9 +4,9 @@
 
 java 8 改变了我们思考和编码的方式，在这里你会看到很多关于 Java 8 的文章和教程，如何使用它的各种功能，以及如何让你的编程更轻松！
 
-[![Travis Build](https://travis-ci.org/biezhi/lets-learn-java8.svg?branch=master)](https://travis-ci.org/biezhi/lets-learn-java8) 
+[![Travis Build](https://travis-ci.org/biezhi/learn-java8.svg?branch=master)](https://travis-ci.org/biezhi/learn-java8) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
-[![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://github.com/biezhi/lets-learn-java8/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://github.com/biezhi/learn-java8/blob/master/LICENSE)
 [![@biezhi on zhihu](https://img.shields.io/badge/zhihu-%40biezhi-red.svg)](https://www.zhihu.com/people/biezhi)
 [![](https://img.shields.io/github/followers/biezhi.svg?style=social&label=Follow%20Me)](https://github.com/biezhi)
 
@@ -37,7 +37,7 @@ java 8 改变了我们思考和编码的方式，在这里你会看到很多关�
 
 ## 相关资源
 
-- 本套课程的所有源码存储在 [Github](https://github.com/biezhi/lets-java8) 上
+- 本套课程的所有源码存储在 [Github](https://github.com/biezhi/learn-java8) 上
 - 欢迎关注知乎专栏 [《跟上 Java 8》](https://zhuanlan.zhihu.com/java8) 学习更多优质内容
 
 ## 交流
