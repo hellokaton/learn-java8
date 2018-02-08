@@ -2,6 +2,9 @@ package io.github.biezhi.java8.growing.jdk6;
 
 /**
  * 用Console开发控制台程序
+ *
+ * @author biezhi
+ * @date 2018/2/8
  */
 public class Console {
 

@@ -9,6 +9,12 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 
+/**
+ * Http Server
+ *
+ * @author biezhi
+ * @date 2018/2/8
+ */
 public class HttpServerAPI {
 
     private static int count = 0;
