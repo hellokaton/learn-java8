@@ -19,8 +19,8 @@ java 8 改变了我们思考和编码的方式，在这里你会看到很多关�
 
 | 课时数 | 课时标题 | 在线播放 | 源码位置 |
 |:-----:|:--------|:-------|:-------|
-|第 1 课 | 课程介绍 | [哔哩哔哩](https://www.bilibili.com/video/av19287893) &brvbar; [Youtube](https://youtu.be/GsFPVjiUpdU) | 无 |
-|第 2 课 | Java 8 的发展 | [哔哩哔哩]() &brvbar; [Youtube]() | [java8-growing](https://github.com/biezhi/learn-java8/tree/master/java8-growing/src/main/java/io/github/biezhi/java8/growing) |
+|第 1 课 | 课程介绍 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/#page=1) &brvbar; [Youtube](https://youtu.be/t_amCwp7iBE) | 无 |
+|第 2 课 | Java 8 的发展 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/#page=2) &brvbar; [Youtube](https://youtu.be/0fULjhKzExs) | [java8-growing](https://github.com/biezhi/learn-java8/tree/master/java8-growing/src/main/java/io/github/biezhi/java8/growing) |
 |第 3 课 | 理解 lambda | 哔哩哔哩 &brvbar; Youtube |  |
 |第 4 课 | 初尝 lambda | 哔哩哔哩 &brvbar; Youtube | |
 |第 5 课 | 默认方法的妙用 | 哔哩哔哩 &brvbar; Youtube | |
