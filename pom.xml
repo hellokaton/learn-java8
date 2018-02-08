@@ -19,6 +19,7 @@
         <module>java8-best-practice</module>
         <module>java8-proper</module>
         <module>java8-concurrent</module>
+        <module>java8-growing</module>
     </modules>
     
     <dependencies>
