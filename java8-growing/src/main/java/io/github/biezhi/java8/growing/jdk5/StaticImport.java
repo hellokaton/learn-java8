@@ -4,6 +4,9 @@ import static java.lang.System.out;
 
 /**
  * 静态导入
+ *
+ * @author biezhi
+ * @date 2018/2/8
  */
 public class StaticImport {
 
