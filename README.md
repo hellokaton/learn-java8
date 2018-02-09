@@ -22,7 +22,7 @@ java 8 改变了我们思考和编码的方式，在这里你可以学习到 Jav
 |:-----:|:--------|:-------|:-------|
 |第 1 课 | 课程介绍 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=1) &brvbar; [Youtube](https://youtu.be/A733pQxiEDk) | 无 |
 |第 2 课 | Java 8 的发展 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=2) &brvbar; [Youtube](https://youtu.be/fHhgm1AZzhs) | [java8-growing](https://github.com/biezhi/learn-java8/tree/master/java8-growing/src/main/java/io/github/biezhi/java8/growing) |
-|第 3 课 | 理解 lambda | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=3) &brvbar; [Youtube](https://youtu.be/Epm5C8fyvsE) | [java8-lambda](https://github.com/biezhi/learn-java8/tree/master/java8-lambda/src/main/java/io/github/biezhi/java8/lambda/lesson1) |
+|第 3 课 | 理解 lambda | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=3) &brvbar; [Youtube](https://youtu.be/1T2Z9eDowjY) | [java8-lambda](https://github.com/biezhi/learn-java8/tree/master/java8-lambda/src/main/java/io/github/biezhi/java8/lambda/lesson1) |
 |第 4 课 | 初尝 lambda | 哔哩哔哩 &brvbar; Youtube | |
 |第 5 课 | lambda 进阶 | 哔哩哔哩 &brvbar; Youtube | |
 |第 6 课 | 默认方法的妙用 | 哔哩哔哩 &brvbar; Youtube | |
