@@ -3,9 +3,6 @@ package io.github.biezhi.java8.lambda.lesson1;
 import io.github.biezhi.java8.lambda.lesson1.predicate.ProjectLanguagePredicate;
 import io.github.biezhi.java8.lambda.lesson1.predicate.ProjectStarPredicate;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
