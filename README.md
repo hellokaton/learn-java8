@@ -2,7 +2,8 @@
 
 这个仓库存储了『跟上Java 8』视频课程源码。
 
-java 8 改变了我们思考和编码的方式，在这里你会看到很多关于 Java 8 的文章和教程，如何使用它的各种功能，以及如何让你的编程更轻松！
+java 8 改变了我们思考和编码的方式，在这里你可以学习到 Java 8 中的核心特性以及使用场景，
+跟我学习 Java 8，让你的编程更轻松！
 
 [![Travis Build](https://travis-ci.org/biezhi/learn-java8.svg?branch=master)](https://travis-ci.org/biezhi/learn-java8) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
@@ -15,12 +16,12 @@ java 8 改变了我们思考和编码的方式，在这里你会看到很多关�
 我们会说清楚每个技能是什么，为什么是这样，以及编码演示他们的使用方法以及场景，
 最后会讲解 Java 8 中的最佳实践以及正确的函数式编程姿势。
 
-## 教程大纲
+## 课程大纲
 
 | 课时数 | 课时标题 | 在线播放 | 源码位置 |
 |:-----:|:--------|:-------|:-------|
-|第 1 课 | 课程介绍 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/#page=1) &brvbar; [Youtube](https://youtu.be/t_amCwp7iBE) | 无 |
-|第 2 课 | Java 8 的发展 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/#page=2) &brvbar; [Youtube](https://youtu.be/0fULjhKzExs) | [java8-growing](https://github.com/biezhi/learn-java8/tree/master/java8-growing/src/main/java/io/github/biezhi/java8/growing) |
+|第 1 课 | 课程介绍 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=1) &brvbar; [Youtube](https://youtu.be/A733pQxiEDk) | 无 |
+|第 2 课 | Java 8 的发展 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=2) &brvbar; [Youtube](https://youtu.be/fHhgm1AZzhs) | [java8-growing](https://github.com/biezhi/learn-java8/tree/master/java8-growing/src/main/java/io/github/biezhi/java8/growing) |
 |第 3 课 | 理解 lambda | 哔哩哔哩 &brvbar; Youtube |  |
 |第 4 课 | 初尝 lambda | 哔哩哔哩 &brvbar; Youtube | |
 |第 5 课 | lambda 进阶 | 哔哩哔哩 &brvbar; Youtube | |
@@ -35,6 +36,8 @@ java 8 改变了我们思考和编码的方式，在这里你会看到很多关�
 |第 14 课 | Nashorn 引擎 | 哔哩哔哩 &brvbar; Youtube | |
 |第 15 课| Java 8 最佳实践 | 哔哩哔哩 &brvbar; Youtube | |
 |第 16 课| 函数式编程的正确姿势 | 哔哩哔哩 &brvbar; Youtube | |
+
+> 建议课程食用方式: x1.5倍速效果更佳
 
 ## 相关资源
 
