@@ -23,17 +23,18 @@ java 8 改变了我们思考和编码的方式，在这里你会看到很多关�
 |第 2 课 | Java 8 的发展 | [哔哩哔哩](https://www.bilibili.com/video/av19287893/#page=2) &brvbar; [Youtube](https://youtu.be/0fULjhKzExs) | [java8-growing](https://github.com/biezhi/learn-java8/tree/master/java8-growing/src/main/java/io/github/biezhi/java8/growing) |
 |第 3 课 | 理解 lambda | 哔哩哔哩 &brvbar; Youtube |  |
 |第 4 课 | 初尝 lambda | 哔哩哔哩 &brvbar; Youtube | |
-|第 5 课 | 默认方法的妙用 | 哔哩哔哩 &brvbar; Youtube | |
-|第 6 课 | 干掉空指针之 Optional | 哔哩哔哩 &brvbar; Youtube | |
-|第 7 课 | 理解 Stream | 哔哩哔哩 &brvbar; Youtube | |
-|第 8 课 | Stream API（上）| 哔哩哔哩 &brvbar; Youtube | |
-|第 9 课 | Stream API（下）| 哔哩哔哩 &brvbar; Youtube | |
-|第 10 课 | 新的日期时间 API | 哔哩哔哩 &brvbar; Youtube | |
-|第 11 课 | 并发增强 | 哔哩哔哩 &brvbar; Youtube | |
-|第 12 课 | CompletableFuture | 哔哩哔哩 &brvbar; Youtube | |
-|第 13 课 | Nashorn 引擎 | 哔哩哔哩 &brvbar; Youtube | |
-|第 14 课| Java 8 最佳实践 | 哔哩哔哩 &brvbar; Youtube | |
-|第 15 课| 函数式编程的正确姿势 | 哔哩哔哩 &brvbar; Youtube | |
+|第 5 课 | lambda 进阶 | 哔哩哔哩 &brvbar; Youtube | |
+|第 6 课 | 默认方法的妙用 | 哔哩哔哩 &brvbar; Youtube | |
+|第 7 课 | 干掉空指针之 Optional | 哔哩哔哩 &brvbar; Youtube | |
+|第 8 课 | 理解 Stream | 哔哩哔哩 &brvbar; Youtube | |
+|第 9 课 | Stream API（上）| 哔哩哔哩 &brvbar; Youtube | |
+|第 10 课 | Stream API（下）| 哔哩哔哩 &brvbar; Youtube | |
+|第 11 课 | 新的日期时间 API | 哔哩哔哩 &brvbar; Youtube | |
+|第 12 课 | 并发增强 | 哔哩哔哩 &brvbar; Youtube | |
+|第 13 课 | CompletableFuture | 哔哩哔哩 &brvbar; Youtube | |
+|第 14 课 | Nashorn 引擎 | 哔哩哔哩 &brvbar; Youtube | |
+|第 15 课| Java 8 最佳实践 | 哔哩哔哩 &brvbar; Youtube | |
+|第 16 课| 函数式编程的正确姿势 | 哔哩哔哩 &brvbar; Youtube | |
 
 ## 相关资源
 
