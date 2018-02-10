@@ -5,7 +5,7 @@
 |:-----:|:--------|:-------|
 | `Predicate<T>` | `T->boolean` | `IntPredicate,LongPredicate, DoublePredicate` |
 | `Consumer<T>` | `T->void` | `IntConsumer,LongConsumer, DoubleConsumer` |
-| `Function<T,R>` | `T->R` | `IntFunction<R>, IntToDoubleFunction, IntToLongFunction, LongFunction<R>, LongToDoubleFunction, LongToIntFunction, DoubleFunction<R>, ToIntFunction<T>, ToDoubleFunction<T>, ToLongFunction<T>` |
+| `Function<T,R>` | `T->R` | `IntFunction<R>, IntToDoubleFunction,` <br/> `IntToLongFunction, LongFunction<R>,` <br/> `LongToDoubleFunction, LongToIntFunction, ` <br/> `DoubleFunction<R>, ToIntFunction<T>, ` <br/> `ToDoubleFunction<T>, ToLongFunction<T>` |
 | `Supplier<T>` | `()->T` | `BooleanSupplier,IntSupplier, LongSupplier, DoubleSupplier` |
 | `UnaryOperator<T>` | `T->T` | `IntUnaryOperator, LongUnaryOperator, DoubleUnaryOperator` |
 | `BinaryOperator<T>` | `(T,T)->T` | `IntBinaryOperator, LongBinaryOperator, DoubleBinaryOperator` |
@@ -22,6 +22,6 @@
 | 创建对象 | `() -> new Project()` | `Supplier<Project>` |
 | 消费一个对象 | `(Project p) -> System.out.println(p.getStars())` | `Consumer<Project>` |
 | 从一个对象中选择/提取 | `(int a, int b) -> a * b` | `IntBinaryOperator` |
-| 比较两个对象 | `(Project p1, Project p2) -> p1.getStars().compareTo(p2.getStars())` | `Comparator<Project>或 BiFunction<Project, Project, Integer> 或 ToIntBiFunction<Project, Project>` |
+| 比较两个对象 | `(Project p1, Project p2) -> p1.getStars().compareTo(p2.getStars())` | `Comparator<Project> 或 BiFunction<Project, ` <br/> `Project, Integer> 或 ToIntBiFunction<Project, Project>` |
 
 
