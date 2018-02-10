@@ -18,6 +18,8 @@ public class FunctionalDemo {
      */
     public void predicate() {
         Predicate<String> namesStartingWithS = name -> name.startsWith("s");
+        boolean           hello              = namesStartingWithS.test("Hello");
+        // false
     }
 
     /**
@@ -25,6 +27,8 @@ public class FunctionalDemo {
      */
     public void consumer() {
         Consumer<String> messageConsumer = message -> System.out.println(message);
+        messageConsumer.accept("Learn Java8");  // Learn Java8"
+
     }
 
     /**
@@ -32,6 +36,7 @@ public class FunctionalDemo {
      */
     public void function() {
         Function<String, String> toUpperCase = name -> name.toUpperCase();
+        toUpperCase.apply("java"); // Java
     }
 
     /**
@@ -39,6 +44,8 @@ public class FunctionalDemo {
      */
     public void supplier() {
         Supplier<String> uuidGenerator = () -> UUID.randomUUID().toString();
+        System.out.println(uuidGenerator.get());
+
     }
 
     public static void main(String[] args) {
