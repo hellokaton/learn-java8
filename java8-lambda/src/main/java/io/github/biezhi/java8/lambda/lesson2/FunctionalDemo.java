@@ -2,6 +2,7 @@ package io.github.biezhi.java8.lambda.lesson2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import java.util.function.*;
 
 /**
@@ -11,6 +12,34 @@ import java.util.function.*;
  * @date 2018/2/10
  */
 public class FunctionalDemo {
+
+    /**
+     * 断言
+     */
+    public void predicate() {
+        Predicate<String> namesStartingWithS = name -> name.startsWith("s");
+    }
+
+    /**
+     * 消费数据
+     */
+    public void consumer() {
+        Consumer<String> messageConsumer = message -> System.out.println(message);
+    }
+
+    /**
+     * 转换
+     */
+    public void function() {
+        Function<String, String> toUpperCase = name -> name.toUpperCase();
+    }
+
+    /**
+     * 提供数据
+     */
+    public void supplier() {
+        Supplier<String> uuidGenerator = () -> UUID.randomUUID().toString();
+    }
 
     public static void main(String[] args) {
 
@@ -29,10 +58,10 @@ public class FunctionalDemo {
         Function<String, String>   concat = x -> x + 1;
 
         Integer two    = add1.apply(1); //yields 2
-        String  answer = concat.apply("0 + 1 = "); //yields "0 + 1 = 1"
+        String  answer = concat.apply("0 + 1 = "); // "0 + 1 = 1"
 
         BinaryOperator<Integer> sum = (a, b) -> a + b;
-        Integer                 res = sum.apply(1, 2); // yields 3
+        Integer                 res = sum.apply(1, 2); // 3
 
         BinaryOperator<Function<Integer, Integer>> compose = (f, g) -> x -> g.apply(f.apply(x));
 
