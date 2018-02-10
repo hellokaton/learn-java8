@@ -20,10 +20,10 @@ java 8 改变了我们思考和编码的方式，在这里你可以学习到 Jav
 
 | 课时数 | 课时标题 | 在线播放 | 源码位置 | 
 |:-----:|:--------|:-------|:-------|
-|第 1 课 | [课程介绍](https://github.com/biezhi/learn-java8) | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=1) &brvbar; [Youtube](https://youtu.be/A733pQxiEDk) | 无 |
+|第 1 课 | [课程介绍](https://github.com/biezhi/learn-java8) | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_1.html#page=1) &brvbar; [Youtube](https://youtu.be/A733pQxiEDk) | 无 |
 |第 2 课 | [Java 8 的发展](https://github.com/biezhi/learn-java8/blob/master/java8-growing/README.md) | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=2) &brvbar; [Youtube](https://youtu.be/fHhgm1AZzhs) | [java8-growing](https://github.com/biezhi/learn-java8/tree/master/java8-growing/src/main/java/io/github/biezhi/java8/growing) |
-|第 3 课 | [理解 lambda](https://github.com/biezhi/learn-java8/blob/master/java8-lambda/README.md) | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=3) &brvbar; [Youtube](https://youtu.be/1T2Z9eDowjY) | [java8-lambda](https://github.com/biezhi/learn-java8/tree/master/java8-lambda/src/main/java/io/github/biezhi/java8/lambda/lesson1) |
-|第 4 课 | [初尝 lambda](https://github.com/biezhi/learn-java8/blob/master/java8-lambda/README.md) | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_2.html#page=4) &brvbar; [Youtube](https://youtu.be/nzATBaLNzm8) | [java8-lambda](https://github.com/biezhi/learn-java8/tree/master/java8-lambda/src/main/java/io/github/biezhi/java8/lambda/lesson2) |
+|第 3 课 | [理解 lambda](https://github.com/biezhi/learn-java8/blob/master/java8-lambda/README.md) | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_3.html#page=3) &brvbar; [Youtube](https://youtu.be/1T2Z9eDowjY) | [java8-lambda](https://github.com/biezhi/learn-java8/tree/master/java8-lambda/src/main/java/io/github/biezhi/java8/lambda/lesson1) |
+|第 4 课 | [初尝 lambda](https://github.com/biezhi/learn-java8/blob/master/java8-lambda/README.md) | [哔哩哔哩](https://www.bilibili.com/video/av19287893/index_4.html#page=4) &brvbar; [Youtube](https://youtu.be/nzATBaLNzm8) | [java8-lambda](https://github.com/biezhi/learn-java8/tree/master/java8-lambda/src/main/java/io/github/biezhi/java8/lambda/lesson2) |
 |第 5 课 | [lambda 进阶](https://github.com/biezhi/learn-java8/blob/master/java8-lambda/README.md) | 哔哩哔哩 &brvbar; Youtube | |
 |第 6 课 | 默认方法的妙用 | 哔哩哔哩 &brvbar; Youtube | |
 |第 7 课 | 干掉空指针之 Optional | 哔哩哔哩 &brvbar; Youtube | |
