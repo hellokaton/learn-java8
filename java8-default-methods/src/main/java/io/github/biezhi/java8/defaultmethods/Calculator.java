@@ -16,4 +16,11 @@ public interface Calculator {
 
     int divide(int number, int divisor);
 
+    default int mod(int first, int second){
+        return first % second;
+    }
+
+    static Calculator getInstance(){
+        return new BasicCalculator();
+    }
 }

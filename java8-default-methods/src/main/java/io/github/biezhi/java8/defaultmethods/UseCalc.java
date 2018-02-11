@@ -12,8 +12,10 @@ public class UseCalc {
         int sum = calculator.add(1, 2);
         System.out.println(sum);
 
-        BasicCalculator cal = new BasicCalculator();
+        Calculator cal = Calculator.getInstance();
         int difference = cal.subtract(3, 2);
         System.out.println(difference);
+
+        System.out.println(cal.mod(3, 2));
     }
 }
