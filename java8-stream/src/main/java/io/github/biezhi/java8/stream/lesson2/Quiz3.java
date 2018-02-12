@@ -1,22 +1,44 @@
 package io.github.biezhi.java8.stream.lesson2;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
- * 3. 斐波纳契元组序列
+ * 2.
  * <p>
- * 斐波纳契数列是著名的经典编程练习。
- * 下面这个数列就是斐波纳契数列的一部分：
- * 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55…数列中开始的两个数字是0和1，后续的每个数字都是前两个数字之和。
- * 斐波纳契元组序列与此类似，是数列中数字和其后续数字组成的元组构成的序列：
- * (0, 1), (1, 1), (1, 2), (2, 3), (3, 5), (5, 8), (8, 13), (13, 21) …
- * 你的任务是用iterate方法生成斐波纳契元组序列中的前20个元素。
+ * 2.1 给定一个数字列表，如何返回一个由每个数的平方构成的列表呢？
+ * 例如，给定[1, 2, 3, 4, 5]，应该返回[1, 4, 9, 16, 25]
+ * <p>
+ * 2.2 给定两个数字列表，如何返回所有的数对呢？例如，给定列表[1, 2, 3]和列表[3, 4]，
+ * 应该返回[(1, 3), (1, 4), (2, 3), (2, 4), (3, 3), (3, 4)]。
+ * 为简单起见，你可以用有两个元素的数组来代表数对。
+ * <p>
+ * 2.3 如何扩展前一个例子，只返回总和能被3整除的数对呢？例如(2, 4)和(3, 3)是可以的。
  *
  * @author biezhi
  * @date 2018/2/12
  */
 public class Quiz3 {
 
-    public static void main(String[] args) {
+    private static void q1() {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 
+    }
+
+    private static void q2() {
+        List<Integer> numbers1 = Arrays.asList(1, 2, 3);
+        List<Integer> numbers2 = Arrays.asList(3, 4);
+    }
+
+    private static void q3() {
+        List<Integer> numbers1 = Arrays.asList(1, 2, 3);
+        List<Integer> numbers2 = Arrays.asList(3, 4);
+    }
+
+    public static void main(String[] args) {
+        q1();
+        q2();
+        q3();
     }
 
 }
