@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 合并流
+ * 扁平流 flatMap
+ * <p>
+ * 列出List中各不相同的单词
+ * <p>
  *
  * @author biezhi
  * @date 2018/2/12
@@ -12,8 +15,7 @@ import java.util.List;
 public class Example4 {
 
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(1, 2, 1, 3, 3, 2, 4);
-        
+        List<String> list = Arrays.asList("I am a boy", "I love the girl", "But the girl loves another girl");
     }
 
 }
