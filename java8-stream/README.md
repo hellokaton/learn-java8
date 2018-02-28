@@ -311,12 +311,12 @@ OptionalInt maxAge = list.stream()
 | `flatMap` | 中间 | `Stream<R>` | `Function<T, Stream<R>>` | `T -> Stream<R>` |
 | `limit` | 中间 | `Stream<T>` | long  | |
 | `sorted` | 中间 | `Stream<T>` | `Comparator<T>` | `(T, T) -> int` |
-| `anyMatch` | 收集 | `boolean` | `Predicate<T>` | `T -> boolean` |
-| `noneMatch` | 收集 | `boolean` | `Predicate<T>` | `T -> boolean` |
-| `allMatch` | 收集 | `boolean` | `Predicate<T>` | `T -> boolean` |
-| `findAny` | 收集 | `Optional<T>` | |  |
-| `findFirst` | 收集 | `Optional<T>` | |  |
-| `forEach` | 收集 | `void` | `Consumer<T>` | `T -> void` |
-| `collect` | 收集 | `R` | `Collector<T, A, R>` |  |
-| `reduce` | 收集 | `Optional<T>` | `BinaryOperator<T>` | `(T, T) -> T` |
-| `count` | 收集 | `long` | | |
+| `anyMatch` | 终端 | `boolean` | `Predicate<T>` | `T -> boolean` |
+| `noneMatch` | 终端 | `boolean` | `Predicate<T>` | `T -> boolean` |
+| `allMatch` | 终端 | `boolean` | `Predicate<T>` | `T -> boolean` |
+| `findAny` | 终端 | `Optional<T>` | |  |
+| `findFirst` | 终端 | `Optional<T>` | |  |
+| `forEach` | 终端 | `void` | `Consumer<T>` | `T -> void` |
+| `collect` | 终端 | `R` | `Collector<T, A, R>` |  |
+| `reduce` | 终端 | `Optional<T>` | `BinaryOperator<T>` | `(T, T) -> T` |
+| `count` | 终端 | `long` | | |
