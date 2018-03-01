@@ -181,12 +181,12 @@ list.stream()
 
 此时一个大流里面包含了一个个小流，我们需要将这些小流合并成一个流。
 
-将小流合并成一个大流：用flagmap替换刚才的map
+将小流合并成一个大流：用 `flatMap` 替换刚才的 map
 
 ```java
 list.stream()
     .map(line->line.split(" "))
-    .flagmap(Arrays::stream)
+    .flatMap(Arrays::stream)
 ```
 
 去重
@@ -194,7 +194,7 @@ list.stream()
 ```java
 list.stream()
     .map(line->line.split(" "))
-    .flagmap(Arrays::stream)
+    .flatMap(Arrays::stream)
     .distinct()
     .collect(toList());
 ```
