@@ -24,6 +24,12 @@ public class Example6 {
         for (int x : numbers) {
             sum += x;
         }
+
+        System.out.println(sum);
+
+        Integer reduce = numbers.stream()
+                .reduce(0, (a, b) -> a + b);
+        System.out.println(reduce);
     }
 
 }

@@ -2,6 +2,7 @@ package io.github.biezhi.java8.stream.lesson2;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 扁平流 flatMap
@@ -16,6 +17,13 @@ public class Example4 {
 
     public static void main(String[] args) {
         List<String> list = Arrays.asList("I am a boy", "I love the girl", "But the girl loves another girl");
+
+        list.stream()
+                .map(word -> word.split(" "))   // Stream<String>
+                .flatMap(Arrays::stream)
+                .distinct()
+                .collect(Collectors.toList());
+
     }
 
 }

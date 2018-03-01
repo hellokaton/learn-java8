@@ -4,6 +4,7 @@ import io.github.biezhi.java8.stream.Project;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 1. 你将如何利用流来筛选前两个Java项目呢？
@@ -15,8 +16,9 @@ import java.util.List;
 public class Quiz2 {
 
     public static void main(String[] args) {
-        List<Project> projects = new ArrayList<>();
+        List<Project> projects = Project.buildData();
 
+        System.out.println(projects.stream().map(Project::getName).limit(2).collect(Collectors.toList()));
     }
 
 }

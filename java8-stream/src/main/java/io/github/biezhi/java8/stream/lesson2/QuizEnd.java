@@ -4,7 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * (1) 找出2011年发生的所有交易，并按交易额排序（从低到高）。
@@ -57,6 +59,52 @@ public class QuizEnd {
                 new Transaction(alan, 2012, 950)
         );
 
+        // 01
+        transactions.stream()
+                .filter(transaction -> transaction.year == 2011)
+                .sorted(Comparator.comparing(Transaction::getValue))
+                .collect(Collectors.toList());
+
+        // 02
+        transactions.stream()
+                .map(Transaction::getTrader)
+                .map(Trader::getCity)
+                .distinct()
+                .collect(Collectors.toList());
+
+        // 03
+        transactions.stream()
+                .map(Transaction::getTrader)
+                .filter(trader -> trader.getCity().equals("Cambridge"))
+                .sorted(Comparator.comparing(Trader::getName))
+                .collect(Collectors.toList());
+
+        // 04
+        transactions.stream()
+                .map(Transaction::getTrader)
+                .map(Trader::getName)
+                .sorted(Comparator.naturalOrder())
+                .collect(Collectors.toList());
+
+        // 05
+        transactions.stream()
+                .map(Transaction::getTrader)
+                .anyMatch(trader -> trader.getCity().equals("Milan"));
+
+        // 06
+        transactions.stream()
+                .filter(transaction -> transaction.getTrader().getCity().equals("Cambridge"))
+                .map(Transaction::getValue)
+                .reduce(0, Integer::sum);
+
+        // 07
+        transactions.stream()
+                .mapToInt(Transaction::getValue)
+                .max();
+
+        // 08
+        transactions.stream()
+                .reduce((t1, t2) -> t1.getValue() < t2.getValue() ? t1 : t2);
     }
 
 }
