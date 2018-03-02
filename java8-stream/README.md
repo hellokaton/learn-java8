@@ -320,3 +320,24 @@ OptionalInt maxAge = list.stream()
 | `collect` | 终端 | `R` | `Collector<T, A, R>` |  |
 | `reduce` | 终端 | `Optional<T>` | `BinaryOperator<T>` | `(T, T) -> T` |
 | `count` | 终端 | `long` | | |
+
+## Collector 收集
+
+**Collectors 类的静态工厂方法**
+
+| 工厂方法 | 返回类型 | 用途 | 示例 |
+|:-----:|:--------|:-------|:-------|
+| `toList` | `List<T>` | 把流中所有项目收集到一个 List | `List<Project> projects = projectStream.collect(toList());` |
+| `toSet` | `Set<T>` | 把流中所有项目收集到一个 Set，删除重复项 | `Set<Project> projects = projectStream.collect(toSet());` |
+| `toCollection` | `Collection<T>` | 把流中所有项目收集到给定的供应源创建的集合 | `Collection<Project> projects = projectStream.collect(toCollection(), ArrayList::new);` |
+| `counting` | `Long` | 计算流中元素的个数 | `long howManyProjects = projectStream.collect(counting());` |
+| `summingInt` | `Integer` | 对流中项目的一个整数属性求和 | `int totalStars = projectStream.collect(summingInt(Project::getStars));` |
+| `averagingInt` | `Double` | 计算流中项目 Integer 属性的平均值 | `double avgStars = projectStream.collect(averagingInt(Project::getStars));` |
+| `summarizingInt` | `IntSummaryStatistics` | 收集关于流中项目 Integer 属性的统计值，例如最大、最小、 总和与平均值 | `IntSummaryStatistics projectStatistics = projectStream.collect(summarizingInt(Project::getStars));` |
+| `joining` | `String` | 连接对流中每个项目调用 toString 方法所生成的字符串 | `String shortProject = projectStream.map(Project::getName).collect(joining(", "));` |
+| `maxBy` | `Optional<T>` | 按照给定比较器选出的最大元素的 Optional， 或如果流为空则为 Optional.empty() | `Optional<Project> fattest = projectStream.collect(maxBy(comparingInt(Project::getStars)));` |
+| `minBy` | `Optional<T>` | 按照给定比较器选出的最小元素的 Optional， 或如果流为空则为 Optional.empty() | `Optional<Project> fattest = projectStream.collect(minBy(comparingInt(Project::getStars)));` |
+| `reducing` | 归约操作产生的类型 | 从一个作为累加器的初始值开始，利用 BinaryOperator 与流中的元素逐个结合，从而将流归约为单个值 | `int totalStars = projectStream.collect(reducing(0, Project::getStars, Integer::sum));` |
+| `collectingAndThen` | 转换函数返回的类型 | 包含另一个收集器，对其结果应用转换函数 | `int howManyProjects = projectStream.collect(collectingAndThen(toList(), List::size));` |
+| `groupingBy` | `Map<K, List<T>>` | 根据项目的一个属性的值对流中的项目作问组，并将属性值作 为结果 Map 的键 | `Map<String,List<Project>> projectByLanguage = projectStream.collect(groupingBy(Project::getLanguage));` |
+| `partitioningBy` | `Map<Boolean,List<T>>` | 根据对流中每个项目应用断言的结果来对项目进行分区 | `Map<Boolean,List<Project>> vegetarianDishes = projectStream.collect(partitioningBy(Project::isVegetarian));` |
