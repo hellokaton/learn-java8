@@ -399,3 +399,52 @@ stream.collect(toCollection(TreeSet::new));
 ### 并行流
 
 并行流就是一个把内容分成多个数据块，并用不不同的线程分别处理每个数据块的流。最后合并每个数据块的计算结果。
+
+将一个顺序执行的流转变成一个并发的流只要调用 `parallel()` 方法
+
+```java
+public static long parallelSum(long n){
+    return Stream.iterate(1L, i -> i +1).limit(n).parallel().reduce(0L,Long::sum);
+}
+```
+
+将一个并发流转成顺序的流只要调用 `sequential()` 方法
+
+```java
+stream.parallel().filter(...).sequential().map(...).parallel().reduce();
+```
+ 
+这两个方法可以多次调用，只有最后一个调用决定这个流是顺序的还是并发的。
+
+并发流使用的默认线程数等于你机器的处理器核心数。
+
+通过这个方法可以修改这个值，这是全局属性。
+
+```java
+System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "12");
+```
+
+并非使用多线程并行流处理数据的性能一定高于单线程顺序流的性能，因为性能受到多种因素的影响。
+如何高效使用并发流的一些建议：
+
+1. 如果不确定， 就自己测试。
+2. 尽量使用基本类型的流 IntStream, LongStream, DoubleStream
+3. 有些操作使用并发流的性能会比顺序流的性能更差，比如limit，findFirst，依赖元素顺序的操作在并发流中是极其消耗性能的。findAny的性能就会好很多，应为不依赖顺序。
+4. 考虑流中计算的性能(Q)和操作的性能(N)的对比, Q表示单个处理所需的时间，N表示需要处理的数量，如果Q的值越大, 使用并发流的性能就会越高。
+5. 数据量不大时使用并发流，性能得不到提升。
+6. 考虑数据结构：并发流需要对数据进行分解，不同的数据结构被分解的性能时不一样的。
+
+**流的数据源和可分解性**
+
+| 源 | 可分解性 |
+|:-----:|:-------|
+| `ArrayList` | 非常好 |
+| `LinkedList` | 差 |
+| `IntStream.range` | 非常好 |
+| `Stream.iterate` | 差 |
+| `HashSet` | 好 |
+| `TreeSet` | 好 |
+
+**流的特性以及中间操作对流的修改都会对数据对分解性能造成影响。 比如固定大小的流在任务分解的时候就可以平均分配，但是如果有filter操作，那么流就不能预先知道在这个操作后还会剩余多少元素。**
+
+**考虑终端操作的性能：如果终端操作在合并并发流的计算结果时的性能消耗太大，那么使用并发流提升的性能就会得不偿失。**
