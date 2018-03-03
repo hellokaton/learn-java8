@@ -615,3 +615,9 @@ ChronoLocalDate jpChronoLocalDate = jpChronology.dateNow();
 
 在实际开发过程中建议使用 `LocalDate`，包括存储、操作、业务规则的解读；除非需要将程序的输入或者输出本地化，
 这时可以使用 `ChronoLocalDate` 类。
+
+### 资料
+
+- [SimpleDateFormat的线程安全问题与解决方案](http://www.cnblogs.com/zemliu/p/3290585.html)
+- [为什么SimpleDateFormat不是线程安全的？](http://blog.csdn.net/yiifaa/article/details/73499053)
+- [Java获取N天前，N天后的日期（如3天）](http://blog.csdn.net/liuwei0376/article/details/13620879)
