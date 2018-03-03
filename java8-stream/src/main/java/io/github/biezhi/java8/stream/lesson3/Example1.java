@@ -1,10 +1,9 @@
 package io.github.biezhi.java8.stream.lesson3;
 
 import io.github.biezhi.java8.stream.Project;
+import static java.util.stream.Collectors.*;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * 1. 计数
@@ -23,6 +22,9 @@ import java.util.stream.Collectors;
  * <p>
  * 5. 连接字符串
  * Collectors.joining
+ * <p>
+ * 6. 一般归约
+ * Collectors.reducing
  *
  * @author biezhi
  * @date 2018/3/2
@@ -31,7 +33,6 @@ public class Example1 {
 
     public static void main(String[] args) {
         List<Project> projects = Project.buildData();
-        projects.stream().collect(HashSet::new, HashSet::add, HashSet::addAll);
-        projects.stream().collect(Collectors.toSet());
+
     }
 }

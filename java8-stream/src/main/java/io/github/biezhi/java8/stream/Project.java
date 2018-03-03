@@ -55,6 +55,9 @@ public class Project {
         data.add(Project.builder().name("Tale").language("java").author("biezhi")
                 .stars(2600).forks(2300).description("Best beautiful java blog, worth a try").build());
 
+        data.add(Project.builder().name("Tale").language("javascript").author("biezhi")
+                .stars(2600).forks(2300).description("Best beautiful java blog, worth a try").build());
+
         data.add(Project.builder().name("Vue.js").language("js").author("yyx990803")
                 .stars(83000).forks(10322).description("A progressive, incrementally-adoptable JavaScript framework for building UI on the web.").build());
 

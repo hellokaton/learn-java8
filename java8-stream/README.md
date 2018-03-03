@@ -323,6 +323,35 @@ OptionalInt maxAge = list.stream()
 
 ## Collector 收集
 
+### 归约
+
+流由一个个元素组成，归约就是将一个个元素“折叠”成一个值，如求和、求最值、求平均值都是归约操作。
+
+### 一般性归约
+
+若你需要自定义一个归约操作，那么需要使用 `Collectors.reducing` 函数，该函数接收三个参数：
+
+* 第一个参数为归约的初始值
+* 第二个参数为归约操作进行的字段
+* 第三个参数为归约操作的过程
+
+## 汇总
+
+Collectors类专门为汇总提供了一个工厂方法：`Collectors.summingInt`。
+它可接受一 个把对象映射为求和所需int的函数，并返回一个收集器；该收集器在传递给普通的 `collect` 方法后即执行我们需要的汇总操作。
+
+### 分组
+
+数据分组是一种更自然的分割数据操作，分组就是将流中的元素按照指定类别进行划分，类似于SQL语句中的 `GROUPBY`。
+
+### 多级分组
+
+多级分组可以支持在完成一次分组后，分别对每个小组再进行分组。
+使用具有两个参数的 `groupingBy` 重载方法即可实现多级分组。
+
+* 第一个参数：一级分组的条件
+* 第二个参数：一个新的 `groupingBy` 函数，该函数包含二级分组的条件
+
 **Collectors 类的静态工厂方法**
 
 | 工厂方法 | 返回类型 | 用途 | 示例 |
@@ -341,3 +370,32 @@ OptionalInt maxAge = list.stream()
 | `collectingAndThen` | 转换函数返回的类型 | 包含另一个收集器，对其结果应用转换函数 | `int howManyProjects = projectStream.collect(collectingAndThen(toList(), List::size));` |
 | `groupingBy` | `Map<K, List<T>>` | 根据项目的一个属性的值对流中的项目作问组，并将属性值作 为结果 Map 的键 | `Map<String,List<Project>> projectByLanguage = projectStream.collect(groupingBy(Project::getLanguage));` |
 | `partitioningBy` | `Map<Boolean,List<T>>` | 根据对流中每个项目应用断言的结果来对项目进行分区 | `Map<Boolean,List<Project>> vegetarianDishes = projectStream.collect(partitioningBy(Project::isVegetarian));` |
+
+### 转换类型
+
+有一些收集器可以生成其他集合。比如前面已经见过的 `toList`，生成了 `java.util.List` 类的实例。
+还有 `toSet` 和 `toCollection`，分别生成 `Set` 和 `Collection` 类的实例。
+到目前为止， 我已经讲了很多流上的链式操作，但总有一些时候，需要最终生成一个集合——比如：
+
+- 已有代码是为集合编写的，因此需要将流转换成集合传入；
+- 在集合上进行一系列链式操作后，最终希望生成一个值；
+- 写单元测试时，需要对某个具体的集合做断言。
+
+使用 `toCollection`，用定制的集合收集元素
+
+```java
+stream.collect(toCollection(TreeSet::new));
+```
+
+还可以利用收集器让流生成一个值。 `maxBy` 和 `minBy` 允许用户按某种特定的顺序生成一个值。
+
+### 数据分区
+
+分区是分组的特殊情况：由一个断言（返回一个布尔值的函数）作为分类函数，它称分区函数。
+分区函数返回一个布尔值，这意味着得到的分组 `Map` 的键类型是 `Boolean`，于是它最多可以分为两组: true是一组，false是一组。
+
+分区的好处在于保留了分区函数返回true或false的两套流元素列表。
+
+### 并行流
+
+并行流就是一个把内容分成多个数据块，并用不不同的线程分别处理每个数据块的流。最后合并每个数据块的计算结果。

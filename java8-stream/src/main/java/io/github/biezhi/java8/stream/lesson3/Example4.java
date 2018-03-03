@@ -3,19 +3,24 @@ package io.github.biezhi.java8.stream.lesson3;
 import io.github.biezhi.java8.stream.Project;
 
 import java.util.List;
+
 import static java.util.stream.Collectors.*;
 
 /**
- * 根据作者名进行分组
+ * 数据分区
  * <p>
- * Collectors.groupingBy
+ * Collectors.partitioningBy
  * <p>
- * 然后根据编程语言类型做前后端分组
+ * 根据前后端将项目分为两组
  *
  * @author biezhi
  * @date 2018/3/2
  */
-public class Example3 {
+public class Example4 {
+
+    public static boolean isBackEnd(Project project){
+        return "java".equalsIgnoreCase(project.getLanguage()) || "python".equalsIgnoreCase(project.getLanguage());
+    }
 
     public static void main(String[] args) {
         List<Project> projects = Project.buildData();
