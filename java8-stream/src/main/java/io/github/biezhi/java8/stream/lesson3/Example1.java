@@ -1,9 +1,12 @@
 package io.github.biezhi.java8.stream.lesson3;
 
 import io.github.biezhi.java8.stream.Project;
-import static java.util.stream.Collectors.*;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.*;
 
 /**
  * 1. 计数
@@ -33,6 +36,20 @@ public class Example1 {
 
     public static void main(String[] args) {
         List<Project> projects = Project.buildData();
+        Double collect = projects.stream()
+                .collect(averagingInt(Project::getStars));
+        System.out.println(collect);
 
+        System.out.println(Stream.of("Hello", "Java8")
+                .collect(joining(",")));
+
+        Integer collect1 = projects.stream()
+                .collect(reducing(0, Project::getStars, (x, y) -> x + y));
+        System.out.println(collect1);
+
+        Optional<Integer> collect2 = projects.stream()
+                .map(Project::getStars)
+                .collect(reducing((x, y) -> x + y));
+        System.out.println(collect2);
     }
 }
