@@ -9,8 +9,8 @@ public class ConcurrentHashMap1 {
         System.out.println("Parallelism: " + ForkJoinPool.getCommonPoolParallelism());
 
         testForEach();
-        testSearch();
-        testReduce();
+//        testSearch();
+//        testReduce();
     }
 
     private static void testReduce() {
