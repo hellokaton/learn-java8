@@ -1,12 +1,15 @@
 # java8 concurrent
 
+1. [知乎专栏 - Threads和Executors](https://zhuanlan.zhihu.com/p/33266682)
+2. [知乎专栏 - 同步和锁](http://zhuanlan.zhihu.com/p/33267015)
+3. [知乎专栏 - 原子变量和 ConcurrentMap](https://zhuanlan.zhihu.com/p/33267165)
+
 ## Thread 和 Runnable
 
 所有的现代操作系统都通过进程和线程来支持并发。进程是通常彼此独立运行的程序的实例，比如，如果你启动了一个Java程序，操作系统产生一个新的进程，与其他程序一起并行执行。
 在这些进程的内部，我们使用线程并发执行代码，因此，我们可以最大限度的利用CPU可用的核心（core）。
 
 Java从JDK1.0开始执行线程。在开始一个新的线程之前，你必须指定由这个线程执行的代码，通常称为task。这可以通过实现Runnable——一个定义了一个无返回值无参数的 `run()` 方法的函数接口。
-
 
 ## 线程池
 
