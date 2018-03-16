@@ -68,7 +68,7 @@ public class FilterProjects {
     }
 
     /**
-     * 按照谓词条件过滤
+     * 按照断言条件过滤
      *
      * @param projects
      * @param projectPredicate
