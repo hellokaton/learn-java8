@@ -5,7 +5,6 @@
 Java8 改变了我们思考和编码的方式，在这里你可以学习到 Java8 中的核心特性以及使用场景，跟我学习 Java8，让你的编程更轻松！
 
 [![Travis Build](https://travis-ci.org/biezhi/learn-java8.svg?branch=master)](https://travis-ci.org/biezhi/learn-java8) 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
 [![License](https://img.shields.io/badge/license-BSD--3-blue.svg)](https://github.com/biezhi/learn-java8/blob/master/LICENSE)
 [![@biezhi on zhihu](https://img.shields.io/badge/zhihu-%40biezhi-red.svg)](https://www.zhihu.com/people/biezhi)
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/biezhii.svg?style=social&label=Follow%20Twitter)](https://twitter.com/biezhii)
