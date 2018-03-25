@@ -20,6 +20,7 @@
         <module>java8-proper</module>
         <module>java8-concurrent</module>
         <module>java8-growing</module>
+        <module>java8-completablefuture</module>
     </modules>
     
     <dependencies>

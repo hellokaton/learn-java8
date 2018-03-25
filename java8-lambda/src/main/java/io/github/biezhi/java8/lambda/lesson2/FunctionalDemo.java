@@ -36,7 +36,7 @@ public class FunctionalDemo {
      */
     public void function() {
         Function<String, String> toUpperCase = name -> name.toUpperCase();
-        toUpperCase.apply("java"); // Java
+        toUpperCase.apply("Java"); // Java
     }
 
     /**
