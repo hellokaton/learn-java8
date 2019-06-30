@@ -163,7 +163,7 @@ LocalDate d2 = localDate.minusYears(3);
 LocalTime类是Java 8中日期时间功能里表示一整天中某个时间点的类，它的时间是无时区属性的（早上10点等等）。比如你需要描述学校几点开学，这个时间不涉及在什么城市，这个描述是对任何国家城市都适用的，此时使用无时区的LocalTime就足够了。
 LocalTime类的对象也是不可变的，所以计算方法会返回一个新的LocalTime实例。
 
-**创建一个LocatTime实例**
+**创建一个LocalTime实例**
 
 有多种方式可以新建LocalTime实例。比如使用当前时间作为值新建对象：
 
